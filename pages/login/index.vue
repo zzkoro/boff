@@ -48,7 +48,7 @@
 
 <script>
 export default {
-  layout: 'loginLayout',
+  layout: 'noSideLayout',
   data() {
     return {
       returnMsg: null,
@@ -60,7 +60,7 @@ export default {
     async login() {
       try {
         await this.$store
-          .dispatch('login', {
+          .dispatch('loginStore/login', {
             id: this.frmId,
             pw: this.frmPw,
           })

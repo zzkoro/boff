@@ -69,7 +69,7 @@ export default {
     [DatePicker.name]: DatePicker,
     [TimeSelect.name]: TimeSelect,
   },
-  layout: 'loginLayout',
+  layout: 'noSideLayout',
   data() {
     return {
       returnMsg: null,

@@ -3,8 +3,8 @@
 </template>
 <script>
 export default {
-  name: 'StarterPage',
-  layout: 'starter',
+  name: 'StarterTestPage',
+  layout: 'starterTestLayout',
   data() {
     return {}
   },

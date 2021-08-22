@@ -74,6 +74,10 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    [
+      '@nuxtjs/dotenv',
+      { filename: `.env.${process.env.NODE_ENV}`, systemvars: true },
+    ],
   ],
   /*
    ** Nuxt.js modules
@@ -89,10 +93,14 @@ export default {
         code: 'ar',
         file: 'ar.js',
       },
+      {
+        code: 'ko',
+        file: 'ko.js',
+      },
     ],
     lazy: true,
     langDir: 'lang/',
-    defaultLocale: 'en',
+    defaultLocale: 'ko',
   },
   /*
    ** Build configuration

@@ -1,6 +1,6 @@
 module.exports = {
   sidebar: {
-    title: 'Creative Tim',
+    title: '핀크 운영관리자',
     shortTitle: 'CT',
     dashboard: 'Dashboard',
     pages: 'Pages',

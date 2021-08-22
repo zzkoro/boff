@@ -15,6 +15,7 @@
           }"
         >
         </sidebar-item>
+        <sidebar-item :link="{ name: 'Pricing', path: '#' }" />
       </template>
     </side-bar>
     <div class="main-panel" :data="sidebarBackground">
@@ -40,6 +41,7 @@ import { SlideYDownTransition, ZoomCenterTransition } from 'vue2-transitions'
 import DashboardNavbar from '@/components/Layout/starter/SampleNavbar.vue'
 import ContentFooter from '@/components/Layout/starter/SampleFooter.vue'
 import DashboardContent from '@/components/Layout/Content.vue'
+import SidebarItem from '~/components/SidebarPlugin/SidebarItem.vue'
 
 function hasElement(className) {
   return document.getElementsByClassName(className).length > 0
@@ -63,6 +65,7 @@ export default {
     DashboardContent,
     SlideYDownTransition,
     ZoomCenterTransition,
+    SidebarItem,
   },
   data() {
     return {
